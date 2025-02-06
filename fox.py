@@ -977,6 +977,5 @@ def run(host, port):
     except Exception as e:
         print(f"ERROR IN run: {e}")
 def start_bot():
-    proxy = Proxy()
-    proxy.run("127.0.0.1", 3000)
+    run("127.0.0.1", 3000)
 start_bot()
