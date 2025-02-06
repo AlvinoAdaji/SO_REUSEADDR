@@ -9,6 +9,7 @@ import random
 import subprocess
 import select
 import json
+####################################
 
 ####################################
 username = "bot"
@@ -976,6 +977,5 @@ def run(host, port):
             t.start()
     except Exception as e:
         print(f"ERROR IN run: {e}")
-def start_bot():
+if __name__ == "__main__":
     run("127.0.0.1", 3000)
-start_bot()
